@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./fooditem.module.css";
-function FoodItem({ foodItem }) {
+function FoodItem({ foodItem, setFoodId }) {
   return (
     <div className={styles.foodContainer}>
       <img
@@ -13,7 +13,15 @@ function FoodItem({ foodItem }) {
       </div>
 
       <div className={styles.buttonContainer}>
-        <button className={styles.recipeButton}>View Recipe</button>
+        <button
+          onClick={() => {
+            console.log(foodItem.id);
+            setFoodId(foodItem.id);
+          }}
+          className={styles.recipeButton}
+        >
+          View Recipe
+        </button>
       </div>
     </div>
   );
