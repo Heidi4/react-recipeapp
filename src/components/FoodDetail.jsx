@@ -1,7 +1,9 @@
 import React from "react";
 
-function FoodDetail({ foodId }) {
+function FoodDetails({ foodId }) {
+  `
+  GET https://api.spoonacular.com/recipes/716429/information?includeNutrition=false`;
   return <div>Food details {foodId}</div>;
 }
 
-export default FoodDetail;
+export default FoodDetails;
