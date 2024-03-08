@@ -4,7 +4,7 @@ import styles from "./search.module.css";
 
 function Search({ foodData, setFoodData }) {
   const URL = "https://api.spoonacular.com/recipes/complexSearch";
-  const API_KEY = "180112df5d8a45f2a2650d5c20aabae9";
+  const API_KEY = "41a121e3948743fc992fbc949220493a";
   // Hooks - are functions all HOOKS are defined inside components
   // useeState() hook for setting states
   const [query, setQuery] = useState("Pizza");

@@ -15,7 +15,6 @@ function FoodItem({ foodItem, setFoodId }) {
       <div className={styles.buttonContainer}>
         <button
           onClick={() => {
-            console.log(foodItem.id);
             setFoodId(foodItem.id);
           }}
           className={styles.recipeButton}
